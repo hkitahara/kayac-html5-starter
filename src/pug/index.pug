@@ -4,10 +4,14 @@ prepend config-block
   - page_name = ''
 
 //- append stylesheet-block
-
-//- append javascript-blocks
+prepend javascript-block
+  script(src="js/clmtrackr.js")
 
 block content-block
   
+
+  #container
+    video#local_video(autoplay)
+    canvas#drawCanvas(with="640" height="480")
   button#start Start
-  video#local_video(autoplay)
+  p#positions

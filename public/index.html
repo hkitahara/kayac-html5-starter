@@ -20,14 +20,19 @@
     <meta property="twitter:title" content="kayac-html5-starter">
     <meta property="twitter:description" content="kayac-html5-starter web page.">
     <!-- stylesheet-->
-    <link rel="stylesheet" href="/css/style.css?v=2">
+    <link rel="stylesheet" href="/css/style.css?v=3">
   </head>
   <body>
     <div class="wrapper">
+      <div id="container">
+        <video id="local_video" autoplay></video>
+        <canvas id="drawCanvas" with="640" height="480"></canvas>
+      </div>
       <button id="start">Start</button>
-      <video id="local_video" autoplay></video>
+      <p id="positions"></p>
     </div>
     <!-- javascript-->
-    <script src="/js/script.js?v=2"></script>
+    <script src="js/clmtrackr.js"></script>
+    <script src="/js/script.js?v=3"></script>
   </body>
 </html>
